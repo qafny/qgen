@@ -1,0 +1,11 @@
+<root>
+<let id = "f" > <vexp op = "id" > x </vexp> <vexp op = "id" > n </vexp> <vexp op = "id" > c </vexp> <vexp = "id" > A </vexp> <vexp op = "id" > M </vexp> 
+   <match id = "n" >
+          <pair case = "0" > <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp> </pair>
+          <pair case = "m" > <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp> </pair>
+   </match>
+</let>
+<pexp gate = "QFT" id = "x" > <vexp op = "num" > 0 </vexp> </pexp> 
+< app id = "f" > <vexp op = "id" > x </vexp> <vexp op = "id" > na </vexp> <vexp op = "id" > c </vexp> <vexp = "id" > a </vexp> <vexp op = "id" > m </vexp> </app> 
+<pexp gate = "RQFT" id = "x" > </pexp>
+</root>

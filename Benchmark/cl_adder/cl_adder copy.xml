@@ -1,0 +1,40 @@
+<let> <id> f </id> <id type = 'qubits' > x </id> <id type = 'qubits' > y </id> <id type = 'qubits' > c </id> <id type = 'nat' > n </id>
+   <match> <id> n </id>
+          <pair> <vexp> 0 </vexp> <pexp gate = 'SKIP' > <id> x </id> <vexp> 0 </vexp> </pexp> </pair>
+          <pair> <vexp op = '+'> <id> m </id> <vexp>  1 </vexp> </vexp> <pexp gate = 'SKIP' > <id> x </id> <vexp> 0 </vexp> </pexp> </pair>
+   </match>
+</let>
+<app> <id> f </id> <id> xa </id> <id> ya </id> <id> ca </id> <id> na </id> </app>
+
+//Definition CNOT (x y : posi) := CU x (X y).
+//Definition SWAP (x y : posi) := if (x ==? y) then (SKIP x) else (CNOT x y; CNOT y x; CNOT x y).
+//Definition CCX (x y z : posi) := CU x (CNOT y z).
+// X , CU gates, 
+//(* modmult adder based on classical circuits. *)
+//Definition MAJ a b c := CNOT c b ; CNOT c a ; CCX a b c.
+//Definition UMA a b c := CCX a b c ; CNOT c a ; CNOT a b.
+//(* The following defines n-bits MAJ and UMA circuit. 
+//   Eventually, MAJ;UMA circuit takes [x][y] and produce [x][(x+y) % 2 ^ n] *)
+//Fixpoint MAJseq' n x y c : exp :=
+//  match n with
+//  | 0 => MAJ c (y,0) (x,0)
+//  | S m => MAJseq' m x y c; MAJ (x, m) (y, n) (x, n)
+//  end.
+//Definition MAJseq n x y c := MAJseq' (n - 1) x y c.
+
+//Fixpoint UMAseq' n x y c : exp :=
+//  match n with
+//  | 0 => UMA c (y,0) (x,0)
+//  | S m => UMA (x, m) (y,n) (x, n); UMAseq' m x y c
+//  end.
+//Definition UMAseq n x y c := UMAseq' (n - 1) x y c.
+
+//Definition adder01 n x y c: exp := MAJseq n x y c; UMAseq n x y c.
+//bitstring                       x, y &ndash;&gt; x, x + y
+//adding the content in array x to array y.
+
+//  match n with
+//  | 0 => MAJ c (y,0) (x,0) ; UMA c (y,0) (x,0)
+//  | S m => MAJseq' m x y c; MAJ (x, m) (y, n) (x, n)
+//  end.
+

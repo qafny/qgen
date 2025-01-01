@@ -1,0 +1,31 @@
+// rz_mod_division specification for testing with TSL
+
+Parameters:
+
+    na:
+        small.            // Small qubit register length .
+        medium.           // Medium qubit register length .
+        large.            // Large qubit register length .
+
+    x:
+        small.            // Small initial value for qubit array, less than m.
+        medium.           // Medium initial value for qubit array, less than m.
+        large.            // Large initial value for qubit array, less than m.
+
+    m:
+        small.            // Small modulo divisor.
+        medium.           // Medium modulo divisor.
+        large.            // Large modulo divisor.
+
+    i:
+        calculated.       // i is calculated based on `findnum` function for valid range.
+
+Environments:
+
+    ex:
+        zero_state.       // `ex` initialized as an array of zeroes.
+
+
+
+
+

@@ -1,0 +1,1080 @@
+
+Test Case 1  		(Key = 1.1.1.1.1.)
+   na         :  small
+   x          :  small
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 2  		(Key = 1.1.1.2.1.)
+   na         :  small
+   x          :  small
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 3  		(Key = 1.1.1.3.1.)
+   na         :  small
+   x          :  small
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 4  		(Key = 1.1.2.1.1.)
+   na         :  small
+   x          :  small
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 5  		(Key = 1.1.2.2.1.)
+   na         :  small
+   x          :  small
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 6  		(Key = 1.1.2.3.1.)
+   na         :  small
+   x          :  small
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 7  		(Key = 1.1.3.1.1.)
+   na         :  small
+   x          :  small
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 8  		(Key = 1.1.3.2.1.)
+   na         :  small
+   x          :  small
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 9  		(Key = 1.1.3.3.1.)
+   na         :  small
+   x          :  small
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 10 		(Key = 1.1.4.1.1.)
+   na         :  small
+   x          :  small
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 11 		(Key = 1.1.4.2.1.)
+   na         :  small
+   x          :  small
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 12 		(Key = 1.1.4.3.1.)
+   na         :  small
+   x          :  small
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 13 		(Key = 1.1.5.1.1.)
+   na         :  small
+   x          :  small
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 14 		(Key = 1.1.5.2.1.)
+   na         :  small
+   x          :  small
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 15 		(Key = 1.1.5.3.1.)
+   na         :  small
+   x          :  small
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 16 		(Key = 1.2.1.1.1.)
+   na         :  small
+   x          :  medium
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 17 		(Key = 1.2.1.2.1.)
+   na         :  small
+   x          :  medium
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 18 		(Key = 1.2.1.3.1.)
+   na         :  small
+   x          :  medium
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 19 		(Key = 1.2.2.1.1.)
+   na         :  small
+   x          :  medium
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 20 		(Key = 1.2.2.2.1.)
+   na         :  small
+   x          :  medium
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 21 		(Key = 1.2.2.3.1.)
+   na         :  small
+   x          :  medium
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 22 		(Key = 1.2.3.1.1.)
+   na         :  small
+   x          :  medium
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 23 		(Key = 1.2.3.2.1.)
+   na         :  small
+   x          :  medium
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 24 		(Key = 1.2.3.3.1.)
+   na         :  small
+   x          :  medium
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 25 		(Key = 1.2.4.1.1.)
+   na         :  small
+   x          :  medium
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 26 		(Key = 1.2.4.2.1.)
+   na         :  small
+   x          :  medium
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 27 		(Key = 1.2.4.3.1.)
+   na         :  small
+   x          :  medium
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 28 		(Key = 1.2.5.1.1.)
+   na         :  small
+   x          :  medium
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 29 		(Key = 1.2.5.2.1.)
+   na         :  small
+   x          :  medium
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 30 		(Key = 1.2.5.3.1.)
+   na         :  small
+   x          :  medium
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 31 		(Key = 1.3.1.1.1.)
+   na         :  small
+   x          :  large
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 32 		(Key = 1.3.1.2.1.)
+   na         :  small
+   x          :  large
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 33 		(Key = 1.3.1.3.1.)
+   na         :  small
+   x          :  large
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 34 		(Key = 1.3.2.1.1.)
+   na         :  small
+   x          :  large
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 35 		(Key = 1.3.2.2.1.)
+   na         :  small
+   x          :  large
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 36 		(Key = 1.3.2.3.1.)
+   na         :  small
+   x          :  large
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 37 		(Key = 1.3.3.1.1.)
+   na         :  small
+   x          :  large
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 38 		(Key = 1.3.3.2.1.)
+   na         :  small
+   x          :  large
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 39 		(Key = 1.3.3.3.1.)
+   na         :  small
+   x          :  large
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 40 		(Key = 1.3.4.1.1.)
+   na         :  small
+   x          :  large
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 41 		(Key = 1.3.4.2.1.)
+   na         :  small
+   x          :  large
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 42 		(Key = 1.3.4.3.1.)
+   na         :  small
+   x          :  large
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 43 		(Key = 1.3.5.1.1.)
+   na         :  small
+   x          :  large
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 44 		(Key = 1.3.5.2.1.)
+   na         :  small
+   x          :  large
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 45 		(Key = 1.3.5.3.1.)
+   na         :  small
+   x          :  large
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 46 		(Key = 2.1.1.1.1.)
+   na         :  medium
+   x          :  small
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 47 		(Key = 2.1.1.2.1.)
+   na         :  medium
+   x          :  small
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 48 		(Key = 2.1.1.3.1.)
+   na         :  medium
+   x          :  small
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 49 		(Key = 2.1.2.1.1.)
+   na         :  medium
+   x          :  small
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 50 		(Key = 2.1.2.2.1.)
+   na         :  medium
+   x          :  small
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 51 		(Key = 2.1.2.3.1.)
+   na         :  medium
+   x          :  small
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 52 		(Key = 2.1.3.1.1.)
+   na         :  medium
+   x          :  small
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 53 		(Key = 2.1.3.2.1.)
+   na         :  medium
+   x          :  small
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 54 		(Key = 2.1.3.3.1.)
+   na         :  medium
+   x          :  small
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 55 		(Key = 2.1.4.1.1.)
+   na         :  medium
+   x          :  small
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 56 		(Key = 2.1.4.2.1.)
+   na         :  medium
+   x          :  small
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 57 		(Key = 2.1.4.3.1.)
+   na         :  medium
+   x          :  small
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 58 		(Key = 2.1.5.1.1.)
+   na         :  medium
+   x          :  small
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 59 		(Key = 2.1.5.2.1.)
+   na         :  medium
+   x          :  small
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 60 		(Key = 2.1.5.3.1.)
+   na         :  medium
+   x          :  small
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 61 		(Key = 2.2.1.1.1.)
+   na         :  medium
+   x          :  medium
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 62 		(Key = 2.2.1.2.1.)
+   na         :  medium
+   x          :  medium
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 63 		(Key = 2.2.1.3.1.)
+   na         :  medium
+   x          :  medium
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 64 		(Key = 2.2.2.1.1.)
+   na         :  medium
+   x          :  medium
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 65 		(Key = 2.2.2.2.1.)
+   na         :  medium
+   x          :  medium
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 66 		(Key = 2.2.2.3.1.)
+   na         :  medium
+   x          :  medium
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 67 		(Key = 2.2.3.1.1.)
+   na         :  medium
+   x          :  medium
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 68 		(Key = 2.2.3.2.1.)
+   na         :  medium
+   x          :  medium
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 69 		(Key = 2.2.3.3.1.)
+   na         :  medium
+   x          :  medium
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 70 		(Key = 2.2.4.1.1.)
+   na         :  medium
+   x          :  medium
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 71 		(Key = 2.2.4.2.1.)
+   na         :  medium
+   x          :  medium
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 72 		(Key = 2.2.4.3.1.)
+   na         :  medium
+   x          :  medium
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 73 		(Key = 2.2.5.1.1.)
+   na         :  medium
+   x          :  medium
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 74 		(Key = 2.2.5.2.1.)
+   na         :  medium
+   x          :  medium
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 75 		(Key = 2.2.5.3.1.)
+   na         :  medium
+   x          :  medium
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 76 		(Key = 2.3.1.1.1.)
+   na         :  medium
+   x          :  large
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 77 		(Key = 2.3.1.2.1.)
+   na         :  medium
+   x          :  large
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 78 		(Key = 2.3.1.3.1.)
+   na         :  medium
+   x          :  large
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 79 		(Key = 2.3.2.1.1.)
+   na         :  medium
+   x          :  large
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 80 		(Key = 2.3.2.2.1.)
+   na         :  medium
+   x          :  large
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 81 		(Key = 2.3.2.3.1.)
+   na         :  medium
+   x          :  large
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 82 		(Key = 2.3.3.1.1.)
+   na         :  medium
+   x          :  large
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 83 		(Key = 2.3.3.2.1.)
+   na         :  medium
+   x          :  large
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 84 		(Key = 2.3.3.3.1.)
+   na         :  medium
+   x          :  large
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 85 		(Key = 2.3.4.1.1.)
+   na         :  medium
+   x          :  large
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 86 		(Key = 2.3.4.2.1.)
+   na         :  medium
+   x          :  large
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 87 		(Key = 2.3.4.3.1.)
+   na         :  medium
+   x          :  large
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 88 		(Key = 2.3.5.1.1.)
+   na         :  medium
+   x          :  large
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 89 		(Key = 2.3.5.2.1.)
+   na         :  medium
+   x          :  large
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 90 		(Key = 2.3.5.3.1.)
+   na         :  medium
+   x          :  large
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 91 		(Key = 3.1.1.1.1.)
+   na         :  large
+   x          :  small
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 92 		(Key = 3.1.1.2.1.)
+   na         :  large
+   x          :  small
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 93 		(Key = 3.1.1.3.1.)
+   na         :  large
+   x          :  small
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 94 		(Key = 3.1.2.1.1.)
+   na         :  large
+   x          :  small
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 95 		(Key = 3.1.2.2.1.)
+   na         :  large
+   x          :  small
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 96 		(Key = 3.1.2.3.1.)
+   na         :  large
+   x          :  small
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 97 		(Key = 3.1.3.1.1.)
+   na         :  large
+   x          :  small
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 98 		(Key = 3.1.3.2.1.)
+   na         :  large
+   x          :  small
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 99 		(Key = 3.1.3.3.1.)
+   na         :  large
+   x          :  small
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 100		(Key = 3.1.4.1.1.)
+   na         :  large
+   x          :  small
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 101		(Key = 3.1.4.2.1.)
+   na         :  large
+   x          :  small
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 102		(Key = 3.1.4.3.1.)
+   na         :  large
+   x          :  small
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 103		(Key = 3.1.5.1.1.)
+   na         :  large
+   x          :  small
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 104		(Key = 3.1.5.2.1.)
+   na         :  large
+   x          :  small
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 105		(Key = 3.1.5.3.1.)
+   na         :  large
+   x          :  small
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 106		(Key = 3.2.1.1.1.)
+   na         :  large
+   x          :  medium
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 107		(Key = 3.2.1.2.1.)
+   na         :  large
+   x          :  medium
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 108		(Key = 3.2.1.3.1.)
+   na         :  large
+   x          :  medium
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 109		(Key = 3.2.2.1.1.)
+   na         :  large
+   x          :  medium
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 110		(Key = 3.2.2.2.1.)
+   na         :  large
+   x          :  medium
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 111		(Key = 3.2.2.3.1.)
+   na         :  large
+   x          :  medium
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 112		(Key = 3.2.3.1.1.)
+   na         :  large
+   x          :  medium
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 113		(Key = 3.2.3.2.1.)
+   na         :  large
+   x          :  medium
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 114		(Key = 3.2.3.3.1.)
+   na         :  large
+   x          :  medium
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 115		(Key = 3.2.4.1.1.)
+   na         :  large
+   x          :  medium
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 116		(Key = 3.2.4.2.1.)
+   na         :  large
+   x          :  medium
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 117		(Key = 3.2.4.3.1.)
+   na         :  large
+   x          :  medium
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 118		(Key = 3.2.5.1.1.)
+   na         :  large
+   x          :  medium
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 119		(Key = 3.2.5.2.1.)
+   na         :  large
+   x          :  medium
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 120		(Key = 3.2.5.3.1.)
+   na         :  large
+   x          :  medium
+   a          :  max_value
+   m          :  large
+   c          :  zero
+
+
+Test Case 121		(Key = 3.3.1.1.1.)
+   na         :  large
+   x          :  large
+   a          :  small
+   m          :  small
+   c          :  zero
+
+
+Test Case 122		(Key = 3.3.1.2.1.)
+   na         :  large
+   x          :  large
+   a          :  small
+   m          :  medium
+   c          :  zero
+
+
+Test Case 123		(Key = 3.3.1.3.1.)
+   na         :  large
+   x          :  large
+   a          :  small
+   m          :  large
+   c          :  zero
+
+
+Test Case 124		(Key = 3.3.2.1.1.)
+   na         :  large
+   x          :  large
+   a          :  medium
+   m          :  small
+   c          :  zero
+
+
+Test Case 125		(Key = 3.3.2.2.1.)
+   na         :  large
+   x          :  large
+   a          :  medium
+   m          :  medium
+   c          :  zero
+
+
+Test Case 126		(Key = 3.3.2.3.1.)
+   na         :  large
+   x          :  large
+   a          :  medium
+   m          :  large
+   c          :  zero
+
+
+Test Case 127		(Key = 3.3.3.1.1.)
+   na         :  large
+   x          :  large
+   a          :  large
+   m          :  small
+   c          :  zero
+
+
+Test Case 128		(Key = 3.3.3.2.1.)
+   na         :  large
+   x          :  large
+   a          :  large
+   m          :  medium
+   c          :  zero
+
+
+Test Case 129		(Key = 3.3.3.3.1.)
+   na         :  large
+   x          :  large
+   a          :  large
+   m          :  large
+   c          :  zero
+
+
+Test Case 130		(Key = 3.3.4.1.1.)
+   na         :  large
+   x          :  large
+   a          :  zero
+   m          :  small
+   c          :  zero
+
+
+Test Case 131		(Key = 3.3.4.2.1.)
+   na         :  large
+   x          :  large
+   a          :  zero
+   m          :  medium
+   c          :  zero
+
+
+Test Case 132		(Key = 3.3.4.3.1.)
+   na         :  large
+   x          :  large
+   a          :  zero
+   m          :  large
+   c          :  zero
+
+
+Test Case 133		(Key = 3.3.5.1.1.)
+   na         :  large
+   x          :  large
+   a          :  max_value
+   m          :  small
+   c          :  zero
+
+
+Test Case 134		(Key = 3.3.5.2.1.)
+   na         :  large
+   x          :  large
+   a          :  max_value
+   m          :  medium
+   c          :  zero
+
+
+Test Case 135		(Key = 3.3.5.3.1.)
+   na         :  large
+   x          :  large
+   a          :  max_value
+   m          :  large
+   c          :  zero
+

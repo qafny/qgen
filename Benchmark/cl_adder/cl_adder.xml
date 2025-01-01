@@ -1,0 +1,20 @@
+<root>
+<let id = "f" > 
+<vexp op = "id" type = "Nat" > n </vexp>
+<vexp op = "id" type = "Nat" > size </vexp>
+<qvexp op = "id" type = "Nor(size)" > x </qvexp>
+<qvexp op = "id" type = "Nor(size)" > y </qvexp>
+<vexp op = "id" type = "Nor(1)" > c </vexp> 
+   <match id = "n" >
+          <pair case = "0" > <pexp gate = "SKIP" id = "x" > <vexp op = "num" > 0 </vexp> </pexp> </pair>
+          <pair case = "m" > <pexp gate = "SKIP" id = "x" > <vexp op = "num" > 0 </vexp> </pexp> </pair>
+   </match>
+</let>
+<app id = "f" > 
+ <vexp op = "id" type = "Nat" > na </vexp> 
+ <vexp op = "id" type = "Nat" > size </vexp> 
+ <qvexp op = "id" type = "Nor(size)" > xa </qvexp>
+ <qvexp op = "id" type = "Nor(size)" > ya </qvexp>
+ <vexp op = "id" type = "Nor(1)" > ca </vexp> 
+</app>
+</root>

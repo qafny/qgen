@@ -1,0 +1,15 @@
+<root>
+<let id = "f" > <vexp op = "id" > x </vexp> <vexp op = "id" > n </vexp> 
+   <match id = "n" >
+          <pair case = "0" > <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp> </pair>
+          <pair case = "m" > 
+<app id = "f" > <vexp op = "id" > x </vexp> <vexp op = "id" > m </vexp> </app> 
+                <pexp gate = "CU" id = "x" > <vexp op = "id" > m </vexp> <pexp gate = "X" id = "x" > <vexp op = "id" > n </vexp> </pexp> </pexp>
+           </pair>
+   </match>
+</let>
+<app id = "f" > <vexp op = "id" > x </vexp> <vexp op = "-"> <vexp op = "id" > n </vexp> <vexp> 1 </vexp> </vexp> </app> 
+</root>
+
+
+

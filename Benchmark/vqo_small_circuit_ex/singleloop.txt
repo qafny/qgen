@@ -1,0 +1,14 @@
+//  Fixpoint f (x:var) (n:nat) (size:nat) (M: nat -> bool) :=
+//  match n with 
+//  | 0 => SKIP (x,0)
+//  | S m => f x m size M ; if M m then SR (size - n) x else SKIP (x,m)
+//  end.
+// to make the simulator at first, we put S m as n - 1, 
+
+
+<let> <id> f </id> <id type = 'qubits' > x </id> <id type = 'nat' > n </id> <id type = 'nat' > size </id> <id type = 'bits' > M </id> 
+   <match> <id> n </id>
+          <pair> <vexp> 0 </vexp> <pexp gate = 'SKIP' > <id> x </id> <vexp> 0 </vexp> </pexp> </pair>
+          <pair> <vexp op = 'plus'> <id> m </id> <vexp 1 </vexp> </vexp> <pexp gate = 'SKIP' > <id> x </id> <vexp> 0 </vexp> </pexp> </pair>   
+   </match>
+</let>

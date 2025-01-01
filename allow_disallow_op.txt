@@ -1,0 +1,45 @@
+We might need a resign of the XML syntax to make pyggi do what we want to do for generating quantum programs, because of the two general principles.
+1. Every program will be given a recursive frame. We do not want pyggi to change the frame, but require pyggi to generate program based on the frame.
+2. Every gate has a fixed structure, replace gates from one to the other might break the structures of the gate.
+
+Current gates grammar:
+
+exp :=
+
+  | SKIP id vexp  (* allowed in any type of id *)
+
+  | X id vexp   (* allowed when id is Nor type *)
+
+  | CU id vexp exp  (* allowed when id is Nor type *)
+  
+  | SR vexp id   (* allowed when id is Phi(m) type, and vexp is less than m *)
+  
+  | Lshift id     (* allowed when id is Nor type *)
+   
+  | Rshift id      (* allowed when id is Nor type *)
+  
+  | Rev id         (* allowed when id is Nor type *)
+  
+  | QFT id vexp     (* allowed when id is Nor type --> the operation transitions the type of id to Phi(vexp) type. *)
+  
+  | RQFT id         (* allowed when id is Phi(m) type ---> the operation transitions the type of id to Nor type. *)
+  
+  | App id (vexp)*     (*  apply a function id with arguments vexp  *)
+  
+  | Ifexp vexp exp exp    (*  apply on a Boolean function vexp, and if it is 1 then exp, else goes to the second exp *)
+  
+  | Match id (exp1, exp2)*   (* not allow to add inside a function body, and exp2 is the only place allowed for using pyggi. *)
+  
+
+The comment block above shows the requirement for rewrites. Assume that Pyggi is given an extra field: environment for storing ids to types, and we can also check the domain of ids to ensure that if we want to modify ids, we must ensure that ids are in scope.
+
+When id is Nor type, permitted opeartions are SKIP, X, CU, Lshift, Rshift, Rev, QFT, App, Ifexp (sub level can only be SKIP, X, CU, Lshift, Rshift, Rev)
+
+When id is Phi(m), permitted operations are SR, RQFT, App, Ifexp (sub-level can only be SR)
+
+QFT and RQFT will cause the id types to change
+
+One thing we can do is to make id to be a tag in the XML, since every gate operation must have an id, there is no need to have an XML structure for id.
+
+The above is the gate level manipulation, the place allowed Pyggi modification is only in the exp2 part of the Match statement.
+

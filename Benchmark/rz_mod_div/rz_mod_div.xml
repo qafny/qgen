@@ -1,0 +1,34 @@
+<root>
+<let id = "g" > <vexp op = "id" > x </vexp> <vexp op = "id" > n </vexp> <vexp op = "id" > size </vexp> <vexp op = "id" > M </vexp> 
+   <match id = "n" >
+          <pair case = "0" > <pexp gate = "SKIP" id = "x" > <vexp op = "num" > 0 </vexp> </pexp> </pair>
+           <pair case = "m" >
+                <pexp gate = "SKIP" id = "x" > <vexp op = "num" > </pexp>
+           </pair>   
+   </match>
+</let>
+
+<let id = "h" > <vexp op = "id" > x </vexp> <vexp op = "id" > n </vexp> <vexp op = "id" > size </vexp> <vexp op = "id" > M </vexp> 
+   <match id = "n" >
+          <pair case = "0" > <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp> </pair>
+           <pair case = "m" >
+                <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp>
+           </pair>   
+   </match>
+</let>
+   
+<let id = "f" > <vexp op = "id" > j </vexp> <vexp op = "id" > x </vexp> <vexp op = "id" > ex </vexp> <vexp op = "id" > n </vexp> <vexp op = "id" > m </vexp> </app> 
+   <match id = "j" >
+          <pair case = "0" > <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp> </pair>
+           <pair case = "m" >
+                <pexp gate = "SKIP" id = "x" > <vexp> 0 </vexp> </pexp>
+           </pair>   
+   </match>
+</let>
+                     
+<pexp gate = "QFT" id = "x" > <vexp op = "num" > 0 </vexp> </pexp> 
+< app id = "f" > <vexp op = "+" > <vexp op = "id" > i </vexp> <vexp op = "num" > 1 </vexp> </vexp> <vexp op = "id" > x </vexp> <vexp op = "id" > ex </vexp> <vexp op = "id" > na </vexp> 
+   <vexp op = "*" > <vexp op = "^" > <vexp op = "num" > 2 </vexp> <vexp op = "id" > i </vexp> </vexp> <vexp op = "id" > m </vexp> </vexp> </app> 
+<pexp gate = "RQFT" id = "x" > </pexp>
+</root>
+

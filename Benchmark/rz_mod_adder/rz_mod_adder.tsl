@@ -1,0 +1,30 @@
+Parameters:
+    na:
+        small.            # A small size of qubits .
+        medium.           # A medium size of qubits.
+        large.            # A large size of qubits .
+
+    x:
+        small.            # A small qubit value less than m.
+        medium.           # A medium qubit value less than m.
+        large.            # A large qubit value less than m.
+
+    a:
+        small.            # A small addend value less than m.
+        medium.           # A medium addend value less than m.
+        large.            # A large addend value less than m.
+        zero.             # Edge case where `a` is zero.
+        max_value.        # The maximum possible value.
+
+
+    m:
+        small.            # A small modulo divisor (>1).
+        medium.           # A medium modulo divisor.
+        large.            # A large modulo divisor.
+        
+
+    c:
+        zero.             # Carry register initialized to zero.
+
+
+

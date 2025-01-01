@@ -1,0 +1,27 @@
+<let>
+    <id> f </id>
+    <id type="qubits"> x </id>
+    <id type="nat"> n </id>
+    <id type="nat"> size </id>
+    <id type="bits"> M </id>
+    <match>
+        <id> n </id>
+        <pair>
+            <vexp> 0 </vexp>
+            <pexp gate="SKIP">
+                <id> x </id>
+                <vexp> 0 </vexp>
+            </pexp>
+        </pair>
+        <pair>
+            <vexp op="plus">
+                <id> m </id>
+                <vexp> 1 </vexp>
+            </vexp>
+            <pexp gate="SKIP">
+                <id> x </id>
+                <vexp> 0 </vexp>
+            </pexp>
+        </pair>
+    </match>
+</let>

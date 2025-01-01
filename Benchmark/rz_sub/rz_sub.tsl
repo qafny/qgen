@@ -1,0 +1,25 @@
+# TSL for rz_adder Quantum Function
+
+Parameters:
+    n:   	
+         small.            # A smaller size of qubits.
+         medium.           # A medium size of qubits.
+         large.            # A larger size of qubits .
+
+    i:
+         small.            # The array has a smaller iterations.
+         medium.           # The array has a medium size.
+         large.            # The array has a large size.
+
+    M:
+         small.            # A small integer value for `m`.
+         medium.           # A medium integer value for `m`.
+         large.            # A large integer value for `m`.
+         zero.             # Edge case where `m` is zero.
+         max_value.        # The maximum possible value.
+
+Environments:
+    X:	
+         zero_state.    # x initialized to |0>
+         max_state.     # x initialized to the maximum value |2^na - 1>
+         random_state.  # x initialized to a random value
