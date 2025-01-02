@@ -6,6 +6,7 @@ import pytest
 import random
 import json
 from antlr4 import InputStream, CommonTokenStream
+from scipy.special import expected
 
 from Source.quantumCode.AST_Scripts.Retrievers import RPFRetriever, MatchCounterRetriever
 from Source.quantumCode.AST_Scripts.ValidatorProgramVisitors import SimulatorValidator, AppRPFValidator
@@ -19,7 +20,7 @@ from Source.quantumCode.AST_Scripts.SpecExpVisitor import SpecExpVisitor
 
 
 @pytest.fixture(scope="module")
-def get_tree():
+def parse_tree():
     test_file_path = f"{os.path.dirname(os.path.realpath(__file__))}/rz_adder_u.xml"
     with open(test_file_path, 'r') as f:
         str = f.read()
@@ -206,7 +207,6 @@ save_mapped_tsl_to_file(test_cases, f"{os.path.dirname(os.path.realpath(__file__
 mapped_test_cases = load_mapped_tsl_from_file(
     f"{os.path.dirname(os.path.realpath(__file__))}/mapped_tsl_values_new.json")
 
-#_prev_rec_error = False
 
 
 ''' tests checks the correctness of the final or computed result/state of the rz_adder'''
@@ -216,10 +216,10 @@ mapped_test_cases = load_mapped_tsl_from_file(
     (case['n'], case['i'], case['X'], case['M'])
     for case in mapped_test_cases
 ])
-def test_addition_random(n, i, X, M, get_tree):
-    if get_tree[2]:
+def test_addition_random(n, i, X, M, parse_tree):
+    if parse_tree[2]:
         expected = (X + (M % (2 ** i))) % 2 ** n
-        assert run_simulator(n, i, X, M, get_tree[0]) == expected
+        assert run_simulator(n, i, X, M, parse_tree[0]) == expected
     else:
         assert False
 
@@ -228,10 +228,10 @@ def test_addition_random(n, i, X, M, get_tree):
     (case['n'], case['i'], case['X'], case['M'])
     for case in [{'n': 10, 'i': 5, 'X': 30, 'M': 0},{'n': 16, 'i': 5, 'X': 100, 'M': 0}]
 ])
-def test_addition_with_edge_case_M(n, i, X, M, get_tree):
-    if get_tree[2]:
+def test_addition_with_edge_case_M(n, i, X, M, parse_tree):
+    if parse_tree[2]:
         expected = (X + (M % (2 ** i))) % 2 ** n
-        assert run_simulator(n, i, X, M, get_tree[0]) == expected
+        assert run_simulator(n, i, X, M, parse_tree[0]) == expected
     else:
         assert False
 
@@ -240,10 +240,10 @@ def test_addition_with_edge_case_M(n, i, X, M, get_tree):
     for case in [{'n': 8, 'i': 1, 'X': 30, 'M': 10},{'n': 16, 'i': 1, 'X': 30, 'M': 50},
                  {'n': 32, 'i': 2, 'X': 30, 'M': 1000}]
 ])
-def test_addition_with_small_i(n, i, X, M, get_tree):
-    if get_tree[2]:
+def test_addition_with_small_i(n, i, X, M, parse_tree):
+    if parse_tree[2]:
         expected = (X + (M % (2 ** i))) % 2 ** n
-        assert run_simulator(n, i, X, M, get_tree[0]) == expected
+        assert run_simulator(n, i, X, M, parse_tree[0]) == expected
     else:
         assert False
 
@@ -252,32 +252,70 @@ def test_addition_with_small_i(n, i, X, M, get_tree):
     for case in [{'n': 8, 'i': 5, 'X': 30, 'M': 10},{'n': 16, 'i': 16, 'X': 30, 'M': 50},
                  {'n': 32, 'i': 16, 'X': 30, 'M': 999}]
 ])
-def test_addition_with_med_i(n, i, X, M, get_tree):
-    if get_tree[2]:
+def test_addition_with_med_i(n, i, X, M, parse_tree):
+    if parse_tree[2]:
         expected = (X + (M % (2 ** i))) % 2 ** n
-        assert run_simulator(n, i, X, M, get_tree[0]) == expected
+        assert run_simulator(n, i, X, M, parse_tree[0]) == expected
     else:
         assert False
+
+
+# tests the bit manipulation or addition at bit level
+@pytest.mark.parametrize("n ,i , X, M", [
+    (case['n'], case['i'], case['X'], case['M'])
+    for case in [{'n': 8, 'i': 5, 'X': 30, 'M': 10}]
+])
+def test_bit_add(n, i, X, M,parse_tree):
+    j=0
+    if i>1:
+        j = i - 2
+
+    bin_arr = to_binary_arr(M, n)
+    #value contributed by jth bit
+    val = bin_arr[j] * (2**j)
+
+    if parse_tree[2]:
+        expected =  (X + val) % 2 ** n
+        assert run_simulator(n,i,X,val,parse_tree[0])==expected
+    else:
+        assert False
+
+
 
 ''' tests check the generated program correctness with reference to the rz_adder_good program; 
      where the tests check fot the presence of certain components like app, if, and other 
      tags or expressions as present in the good program'''
 
-def test_to_ensure_at_most_one_app_func(get_tree):
-   app_count= get_tree[1].get_app_counter()
+def test_to_ensure_at_most_one_app_func(parse_tree):
+   app_count= parse_tree[1].get_app_counter()
    assert app_count <= 1
 
-def test_to_check_at_least_one_app_func(get_tree):
-    app_count= get_tree[1].get_app_counter()
+def test_to_check_at_least_one_app_func(parse_tree):
+    app_count= parse_tree[1].get_app_counter()
     assert app_count >= 1
 
-def test_to_ensure_at_most_one_if_exp(get_tree):
-   if_count= get_tree[1].get_if_counter()
+def test_to_ensure_at_most_one_if_exp(parse_tree):
+   if_count= parse_tree[1].get_if_counter()
    assert if_count <= 1
 
-def test_to_check_at_least_if_exp(get_tree):
-    if_count = get_tree[1].get_if_counter()
+def test_to_check_at_least_if_exp(parse_tree):
+    if_count = parse_tree[1].get_if_counter()
     assert if_count >= 1
+
+
+
+''' Property based tests'''
+
+#To tests the adder always results in a value greater than input (or equal when M is 0).
+def test_to_check_result_greater_than_input(parse_tree):
+    n,i,X,M= 8,3,20,30
+
+    if parse_tree[2]:
+        assert run_simulator(n, i, X, M, parse_tree[0]) > X
+    else:
+        assert False
+
+
 
 
 

@@ -1,0 +1,5 @@
+.idea
+Source/.pyggi/*
+*.pyc
+/.pyggi
+.DS_Store
