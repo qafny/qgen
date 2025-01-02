@@ -277,6 +277,9 @@ def test_bit_add(n, i, X, M,parse_tree):
     if parse_tree[2]:
         expected =  (X + val) % 2 ** n
         assert run_simulator(n,i,X,val,parse_tree[0])==expected
+
+        '''run_simulator(n,i,X,val,parse_tree[0]) - run_simulator(n,i-1,X,val,parse_tree[0]) 
+           equivalent to the value contributed by ith bit'''
     else:
         assert False
 
