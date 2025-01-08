@@ -6,7 +6,7 @@ import pytest
 import random
 import json
 from antlr4 import InputStream, CommonTokenStream
-from scipy.special import expected
+#from scipy.special import expected
 
 from Source.quantumCode.AST_Scripts.Retrievers import RPFRetriever, MatchCounterRetriever
 from Source.quantumCode.AST_Scripts.ValidatorProgramVisitors import SimulatorValidator, AppRPFValidator

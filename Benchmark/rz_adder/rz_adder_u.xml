@@ -1,0 +1,20 @@
+<root>
+<let id="f"> <vexp op="id" type="Nat"> n </vexp>
+                <vexp op="id" type="Nat"> size </vexp>
+                <vexp op="id" type="Nat"> M </vexp>
+                <vexp op="id" type="Phi(size, size)"> x </vexp>
+   <match id="n">
+          <pair case="0"> <pexp gate="SKIP" id="x"> <vexp op="num"> 0 </vexp> </pexp> </pair>
+           <pair case="m">
+                <pexp gate="SKIP" id="x"> <vexp op="num">22</vexp></pexp>
+           </pair>
+   </match>
+</let>
+<pexp gate="QFT" id="x"> <vexp op="num"> 0 </vexp> </pexp>
+<app id="f"> <vexp op="id" type="Nat"> na </vexp>
+                <vexp op="id" type="Nat"> size </vexp>
+                <vexp op="id" type="Nat"> m </vexp>
+                <vexp op="id" type="Phi(size, size)"> x </vexp>
+</app>
+<pexp gate="RQFT" id="x"> </pexp>
+</root>
